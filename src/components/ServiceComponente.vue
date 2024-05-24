@@ -14,6 +14,7 @@
             <h2 class="font-weight-black">{{ props.name }}</h2>
           </v-col>
       </v-row>
+      <v-row><br/></v-row>
       <v-row no-gutters>
           <v-col class="d-flex justify-center">
             <v-btn

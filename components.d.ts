@@ -7,7 +7,18 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    EBSCOServiceComponent: typeof import('./src/components/EBSCOServiceComponent.vue')['default']
+    EBSCOServiceResultsComponent: typeof import('./src/components/EBSCOServiceResultsComponent.vue')['default']
+    EricServiceComponent: typeof import('./src/components/EricServiceComponent.vue')['default']
+    EricServiceResultsComponent: typeof import('./src/components/EricServiceResultsComponent.vue')['default']
+    GoogleAcademicComponent: typeof import('./src/components/GoogleAcademicComponent.vue')['default']
+    GoogleAcademicServiceComponent: typeof import('./src/components/GoogleAcademicServiceComponent.vue')['default']
+    GoogleAcademicServiceResultsComponent: typeof import('./src/components/GoogleAcademicServiceResultsComponent.vue')['default']
+    GoogleBooksServiceComponent: typeof import('./src/components/GoogleBooksServiceComponent.vue')['default']
+    GoogleBooksServiceResultsComponent: typeof import('./src/components/GoogleBooksServiceResultsComponent.vue')['default']
     HubComponent: typeof import('./src/components/HubComponent.vue')['default']
+    OCLCServiceComponent: typeof import('./src/components/OCLCServiceComponent.vue')['default']
+    OCLCServiceResultsComponent: typeof import('./src/components/OCLCServiceResultsComponent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ServiceComponente: typeof import('./src/components/ServiceComponente.vue')['default']
