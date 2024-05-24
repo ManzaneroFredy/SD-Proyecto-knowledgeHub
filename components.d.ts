@@ -11,7 +11,6 @@ declare module 'vue' {
     EBSCOServiceResultsComponent: typeof import('./src/components/EBSCOServiceResultsComponent.vue')['default']
     EricServiceComponent: typeof import('./src/components/EricServiceComponent.vue')['default']
     EricServiceResultsComponent: typeof import('./src/components/EricServiceResultsComponent.vue')['default']
-    GoogleAcademicComponent: typeof import('./src/components/GoogleAcademicComponent.vue')['default']
     GoogleAcademicServiceComponent: typeof import('./src/components/GoogleAcademicServiceComponent.vue')['default']
     GoogleAcademicServiceResultsComponent: typeof import('./src/components/GoogleAcademicServiceResultsComponent.vue')['default']
     GoogleBooksServiceComponent: typeof import('./src/components/GoogleBooksServiceComponent.vue')['default']

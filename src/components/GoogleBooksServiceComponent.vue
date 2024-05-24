@@ -29,13 +29,10 @@ const valid = ref(false);
 const showResults = ref(false);
 
 const fields = reactive([
-  { label: 'Field 1aca', value: '', rules: [(v) => !!v || 'Field 1 is required'] },
-  { label: 'Field 2', value: '', rules: [(v) => !!v || 'Field 2 is required'] },
-  { label: 'Field 1', value: '', rules: [(v) => !!v || 'Field 1 is required'] },
-  { label: 'Field 2', value: '', rules: [(v) => !!v || 'Field 2 is required'] },
-  { label: 'Field 1', value: '', rules: [(v) => !!v || 'Field 1 is required'] },
-  { label: 'Field 2', value: '', rules: [(v) => !!v || 'Field 2 is required'] },
+  { label: 'Introduce el título', value: '', rules: [(v) => !!v || 'Field 1 is required'] },
 ]);
+
+// GET https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=yourAPIKey
 
 const submitForm = () => {
   if (valid.value) {
