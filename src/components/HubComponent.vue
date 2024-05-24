@@ -57,6 +57,16 @@
         </v-col>
       </v-row>
     </v-container>
+    <v-container>
+      <v-row justify="center">
+        <v-col>
+          <ServiceComponent
+            name="nowtes"
+            imageUrl="https://cdn.discordapp.com/attachments/974116062473883688/1243652146033987665/LogoMakr.png?ex=665240d1&is=6650ef51&hm=7ed5cb14d8bfd7fa68fe3cb28c11303748135266d4f1bded8a8ab7180d95f839&"
+          ></ServiceComponent>
+        </v-col>
+      </v-row>
+    </v-container>
     <WikipediaServiceComponent v-if="showWikipedia"/>
     <GoogleAcademicServiceComponent v-if="showGoogleAcademic"/>
     <GoogleBooksServiceComponent v-if="showGoogleBooks"/>
