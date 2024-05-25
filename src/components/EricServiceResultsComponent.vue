@@ -17,7 +17,7 @@ const props = defineProps({
     type: Array,
     required: true,
     validator: (value) => {
-      return value.every(item => typeof item.label === 'string' && typeof item.value === 'string');
+      return value.every(item => typeof item.label === 'string' || typeof item.value === 'string');
     }
   }
 });
