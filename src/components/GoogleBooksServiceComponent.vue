@@ -57,7 +57,8 @@ const fetchBooks = async (query) => {
 const transformedResults = computed(() => {
   return results.value.map(book => ({
     label: book.volumeInfo.title,
-    value: book.volumeInfo.authors ? book.volumeInfo.authors.join(', ') : 'Unknown author'
+    value: book.volumeInfo.authors ? book.volumeInfo.authors.join(', ') : 'Unknown author',
+    //previewLink: book.previewLink || 'No preview available',
   }));
 });
 </script>

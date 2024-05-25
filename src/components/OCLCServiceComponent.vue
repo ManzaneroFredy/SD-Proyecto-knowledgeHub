@@ -29,7 +29,7 @@ const valid = ref(false);
 const showResults = ref(false);
 
 const fields = reactive([
-  { label: 'Field 1aca', value: '', rules: [(v) => !!v || 'Field 1 is required'] },
+  { label: 'Field 1', value: '', rules: [(v) => !!v || 'Field 1 is required'] },
   { label: 'Field 2', value: '', rules: [(v) => !!v || 'Field 2 is required'] },
   { label: 'Field 1', value: '', rules: [(v) => !!v || 'Field 1 is required'] },
   { label: 'Field 2', value: '', rules: [(v) => !!v || 'Field 2 is required'] },

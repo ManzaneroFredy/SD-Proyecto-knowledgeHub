@@ -4,6 +4,7 @@
       <v-col cols="12" v-for="(field, index) in results" :key="index">
         <h3>{{ field.label }}</h3>
         <p>{{ field.value }}</p>
+        <!--<a :href="result.previewLink" target="_blank">Preview</a>-->
       </v-col>
     </v-row>
   </v-container>
