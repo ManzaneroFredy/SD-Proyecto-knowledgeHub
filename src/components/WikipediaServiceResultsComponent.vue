@@ -1,9 +1,9 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="12" v-for="(field, index) in results" :key="index">
-        <h3>{{ field.label }}</h3>
-        <p>{{ field.value }}</p>
+      <v-col cols="12" v-for="(titleResults, index) in props.titleResults" :key="index">
+        <h3>{{ titleResults }}</h3>
+        <p>{{ props.linkResults.at(index) }}</p>
       </v-col>
     </v-row>
   </v-container>
@@ -13,12 +13,13 @@
 import { defineProps } from 'vue';
 
 const props = defineProps({
-  results: {
+  titleResults: {
     type: Array,
     required: true,
-    validator: (value) => {
-      return value.every(item => typeof item.label === 'string' && typeof item.value === 'string');
-    }
+  },
+  linkResults: {
+    type: Array,
+    required: true,
   }
 });
 </script>
