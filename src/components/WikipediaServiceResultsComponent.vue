@@ -3,7 +3,8 @@
     <v-row>
       <v-col cols="12" v-for="(titleResults, index) in props.titleResults" :key="index">
         <h3>{{ titleResults }}</h3>
-        <p>{{ props.linkResults.at(index) }}</p>
+        <p>{{ props.linkResults.at(index)}}</p>
+        <v-btn :href="props.linkResults.at(index)">Irse a esta página</v-btn>
       </v-col>
     </v-row>
   </v-container>

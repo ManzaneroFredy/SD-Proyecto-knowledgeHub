@@ -50,8 +50,6 @@ const fetchArticles = async () => {
   const RESPONSE_LINKS = 3;
 
 
-
-
   try {
     const response = await fetch(url)
     const data = await response.json();
@@ -68,6 +66,7 @@ const fetchArticles = async () => {
   }
 
 }
+
 
 </script>
 
